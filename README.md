@@ -167,7 +167,7 @@ Few Postman screenshots demonstrating some endpoints flows.
 
 - Sync button / trigger:
 
-![Sync-To-refrech Content](screenshots/Sync-To-refrech-Content.png)
+![Sync-To-refrech-Content](screenshots/Sync-To-refrech-Content.png)
 
 - Successful refresh (shows refreshed content list):
 
