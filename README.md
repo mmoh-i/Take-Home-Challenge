@@ -36,7 +36,11 @@ This README contains setup instructions, an example `.env`, and sample API usage
    - Local (Homebrew):
      ```bash
      brew services start postgresql
-     createdb take_home_challenge
+     createdb articles_db
+     ```
+    or using psql
+     ```bash
+     CREATE DATABASE article_db;
      ```
 
    - AWS RDS: create an RDS instance and note host, username, password, and DB name.
