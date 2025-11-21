@@ -8,8 +8,6 @@ This README contains setup instructions, an example `.env`, and sample API usage
 
 - Python 3.9+
 - PostgreSQL (local or AWS RDS)
-- (Optional) Docker if you prefer running Postgres in a container
-
 ## Quick setup (development)
 
 1. Clone the repo and enter the directory (you already are here):
