@@ -1,4 +1,4 @@
-# Content Aggregator — Backend
+# Take Home — Backend
 
 This repository is a FastAPI-based backend for a content aggregation platform (take-home challenge). It fetches articles from multiple sources, stores them in PostgreSQL, and exposes endpoints for a frontend to query and manage user preferences.
 
@@ -36,7 +36,7 @@ This README contains setup instructions, an example `.env`, and sample API usage
    - Local (Homebrew):
      ```bash
      brew services start postgresql
-     createdb take_home_challenge
+     CREATE DATABASE articles_db;
      ```
 
    - AWS RDS: create an RDS instance and note host, username, password, and DB name.
@@ -167,15 +167,15 @@ Few Postman screenshots demonstrating some endpoints flows.
 
 - Sync button / trigger:
 
-![Sync To refrech Content](screenshots/Sync-To-refrech-Content.png)
+![Sync-To-refrech Content](screenshots/Sync-To-refrech-Content.png)
 
 - Successful refresh (shows refreshed content list):
 
-![refreshed contents](screenshots/refreshed-contents.png)
+![refreshed-contents](screenshots/refreshed-contents.png)
 
 - Filtering by category UI / example Postman query:
 
-![filter by category](screenshots/filter-by-category.png)
+![filter-by-category](screenshots/filter-by-category.png)
 
 - Pagination behavior in the frontend / results:
 
