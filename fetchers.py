@@ -91,9 +91,7 @@ def fetch_from_eventregistry(query: dict, pages: int = 1, per_page: int = 100) -
     return all_articles
 
 
-# =============================================================================
 # THE GUARDIAN API
-# =============================================================================
 
 def convert_guardian_article(item) -> ArticleCreate:
     fields = item.get("fields", {})

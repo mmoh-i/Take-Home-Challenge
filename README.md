@@ -73,17 +73,16 @@ Notes:
 ## Common issues & troubleshooting
 
 - "can't adapt type 'HttpUrl'": Pydantic's `HttpUrl` must be cast to `str` before inserting into the DB. The codebase already casts `article.url` to `str` before insert.
-- "column ... does not exist": This means your DB schema is out-of-sync with models. Use Alembic or run `ALTER TABLE` to add/rename columns (e.g. `author`, `fetched_at`).
-- 401 from The Guardian: ensure `GUARDIAN_API_KEY` is present in `.env` and loaded. The fetcher will skip Guardian fetch if key is missing.
+- 401 from The Guardian: ensure `GUARDIAN_API_KEY` is present in `.env` and loaded. The fetcher will skip Guardian fetch if key is missing like wise for the NEWSAPI_KEY.
 
 ## Endpoints (summary)
 
 - GET /articles
   - Query params: `skip`, `limit`, `source`, `author`, `category`, `date_from` (ISO), `date_to` (ISO), `q` (search)
-  - Returns list of articles (Pydantic `ArticleRead`)
+  - Returns list of articles
 
 - POST /articles/sync
-  - Triggers a fetch from configured sources and upserts into DB
+  - Triggers a fetch from configured sources API and upserts into DB
   - Returns `{ "created": <n> }`
 
 - GET /preferences/{user_id}
