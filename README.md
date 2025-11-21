@@ -10,17 +10,6 @@ This README contains setup instructions, an example `.env`, and sample API usage
 - PostgreSQL (local or AWS RDS)
 ## Quick setup (development)
 
-## System Architecture
-
-```mermaid
-flowchart TD
-
-    A[External APIs] --> B[Data Fetchers]
-    B --> C[Bulk Upsert Engine]
-    C --> D[(PostgreSQL Database)]
-    D <-->|Read Queries| E[FastAPI Endpoints]
-
-
 1. Clone the repo and enter the directory (you already are here):
 
    ```bash
