@@ -1,4 +1,4 @@
-# Content Aggregator — Backend
+# Backend
 
 This repository is a FastAPI-based backend for a content aggregation platform (take-home challenge). It fetches articles from multiple sources, stores them in PostgreSQL, and exposes endpoints for a frontend to query and manage user preferences.
 
