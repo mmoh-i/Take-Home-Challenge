@@ -10,7 +10,7 @@ def get_article_by_url(db: Session, url: str) -> Optional[Article]:
 
 #CRUD operations for UserPreference
 def create_article(db: Session, article: ArticleCreate) -> Article:
-    # Ensure URL is a plain string (Pydantic HttpUrl can't be adapted directly)
+    #URL is a plain string (Pydantic HttpUrl can't be adapted directly)
     url_val = str(article.url) if article.url is not None else None
     db_article = Article(
         title=article.title,
@@ -55,7 +55,6 @@ def bulk_upsert_articles(db: Session, articles: List[ArticleCreate]) -> List[Art
     return created
 
 def list_articles(db: Session, skip: int = 0, limit: int = 100, filters: dict = None) -> List[Article]:
-    # Always start from a Query object instead of assuming `db` is a Query.
     query = db.query(Article)
     if filters:
         if 'source' in filters:
