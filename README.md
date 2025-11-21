@@ -9,17 +9,17 @@ This README contains setup instructions, an example `.env`, and sample API usage
 - Python 3.9+
 - PostgreSQL (local or AWS RDS)
 ## Quick setup (development)
-## 🏗️ System Architecture
+
+## System Architecture
 
 ```mermaid
 flowchart TD
 
-    A[External APIs<br>(Weather, Sensors, etc.)] --> B[Data Fetchers<br>(Cron / Scheduled Jobs)]
-    B --> C[Bulk Upsert Engine<br>(Data Cleaning & Transformation)]
+    A[External APIs] --> B[Data Fetchers]
+    B --> C[Bulk Upsert Engine]
     C --> D[(PostgreSQL Database)]
-
     D <-->|Read Queries| E[FastAPI Endpoints]
-```
+
 
 1. Clone the repo and enter the directory (you already are here):
 
