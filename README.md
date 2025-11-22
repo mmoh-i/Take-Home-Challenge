@@ -171,15 +171,15 @@ Few Postman screenshots demonstrating some endpoints flows.
 
 - Sync button / trigger:
 
-![Sync To refrech Content](screenshots/Sync To refrech Content.png)
+![Sync To refrech Content](screenshots/Sync-To-refrech-Content.png)
 
 - Successful refresh (shows refreshed content list):
 
-![refreshed contents](screenshots/refreshed contents.png)
+![refreshed contents](screenshots/refreshed-contents.png)
 
 - Filtering by category UI / example Postman query:
 
-![filter by category](screenshots/filter by category.png)
+![filter by category](screenshots/filter-by-category.png)
 
 - Pagination behavior in the frontend / results:
 
