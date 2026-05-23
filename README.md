@@ -184,5 +184,3 @@ Few Postman screenshots demonstrating some endpoints flows.
 - Pagination behavior in the frontend / results:
 
 ![Pagination](screenshots/Pagination.png)
-
-If you want different captions, tell me what text to use and I'll update these.
